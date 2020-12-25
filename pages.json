@@ -1,0 +1,123 @@
+{
+	"easycom": {
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+		},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/assign",
+			"style": {
+				"navigationBarTitleText": "添加记录"
+			}
+		},
+		{
+			"path": "pages/statistics/index",
+			"style": {
+				"navigationBarTitleText": "库存管理",
+				"enablePullDownRefresh":true,//开启下拉刷新
+				"app-plus":{
+					"titleNView":{
+						"buttons":[
+							{
+								"text": "\ue6e0",
+								"fontSrc": "/static/iconfont/iconfont.ttf",
+								"fontSize": "22px"
+							}
+							
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/order/index",
+			"style": {
+				"navigationBarTitleText": "商品管理",
+				"enablePullDownRefresh":true,//开启下拉刷新
+				"app-plus":{
+					"titleNView":{
+						"buttons":[
+							{
+								"text": "\ue6e0",
+								"fontSrc": "/static/iconfont/iconfont.ttf",
+								"fontSize": "22px"
+							}
+							
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/profile/index",
+			"style": {
+				"navigationBarTitleText": "用户管理"
+			}
+		},
+		{
+			"path": "pages/profile/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/index/reassignment",
+			"style": {
+				"navigationBarTitleText": "改派"
+			}
+		},
+		{
+			"path": "pages/index/driverList",
+			"style": {
+				"navigationBarTitleText": "司机列表"
+			}
+		},
+		{
+			"path": "pages/profile/about",
+			"style": {
+				"navigationBarTitleText": "关于"
+			}
+		},
+		{
+			"path": "pages/profile/modify",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"selectedColor":"#1296db",
+		"backgroundColor":"#f8f8f8",
+		"list":[
+			{
+				"text":"交易管理",
+				"pagePath":"pages/index/assign",
+				"iconPath": "static/image/transaction.png",
+				"selectedIconPath": "static/image/transaction_select.png"
+			},
+			{
+				"text":"库存管理",
+				"pagePath":"pages/statistics/index",
+				"iconPath": "static/image/stock.png",
+				"selectedIconPath": "static/image/stock_select.png"
+			},
+			{
+				"text":"订单管理",
+				"pagePath":"pages/order/index",
+				"iconPath": "static/image/order.png",
+				"selectedIconPath": "static/image/order_select.png"
+			},
+			{
+				"text":"用户管理",
+				"pagePath":"pages/profile/index",
+				"iconPath": "static/image/profile.png",
+				"selectedIconPath": "static/image/profile-select.png"
+			}
+		]
+	}
+}
