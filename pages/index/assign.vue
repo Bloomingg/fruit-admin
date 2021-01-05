@@ -159,6 +159,7 @@
 					if (res.data.records.length == 10) {
 						this.orderInfo = [...this.orderInfo, ...res.data.records]
 						this.status = 'loadmore'
+						this.lastStatus = false
 					} else if (res.data.records.length > 0 && res.data.records.length < 10) {
 						this.orderInfo = [...this.orderInfo, ...res.data.records]
 						this.lastStatus = true

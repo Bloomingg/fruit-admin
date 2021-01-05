@@ -45,13 +45,13 @@
 		}
 		.uni-tabbar__bd{
 			.uni-tabbar__icon{
-				width: 16px;
-				height: 16px;
+				width: 32rpx;
+				height: 32rpx;
 			}
 		}
 	}
 	.uni-tabbar__icon{
-		width: 16px;
-		height: 16px;
+		width: 32rpx;
+		height: 32rpx;
 	}
 </style>
